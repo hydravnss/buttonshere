@@ -1,0 +1,68 @@
+/* ==========================================================
+   BUTTONSHERE
+   Force les boutons des messages à rester visibles
+   ========================================================== */
+
+
+/* Zone complète des boutons */
+
+.mes .mes_buttons,
+.mes .mes_buttons.buttonshere-visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: flex !important;
+    pointer-events: auto !important;
+}
+
+
+/* Chaque bouton */
+
+.mes .mes_buttons button,
+.mes .mes_buttons .mes_button {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+
+/* Annule les règles de type hover utilisées par les thèmes */
+
+.mes:not(:hover) .mes_buttons,
+.mes:not(:focus) .mes_buttons,
+.mes:not(:focus-within) .mes_buttons {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* Même si un thème applique une transition */
+
+.mes .mes_buttons {
+    transition: none !important;
+}
+
+
+/* Empêche les boutons d'être masqués par transform/animation */
+
+.mes .mes_buttons,
+.mes .mes_buttons * {
+    animation: none !important;
+}
+
+
+/* Mobile / iPhone */
+
+@media screen and (max-width: 768px) {
+
+    .mes .mes_buttons {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: flex !important;
+    }
+
+    .mes .mes_buttons button,
+    .mes .mes_buttons .mes_button {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
