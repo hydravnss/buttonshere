@@ -1,0 +1,12 @@
+{
+    "display_name": "ButtonsHere",
+    "loading_order": 999,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "hydravnss",
+    "version": "1.0.0",
+    "homePage": "https://github.com/hydravnss/buttonshere",
+    "auto_update": false
+}
